@@ -1,0 +1,38 @@
+[project]
+name = "proj"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "K.Charan Chandra Reddy", email = "kallurucharanchandrareddy2006@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "chroma>=0.2.0",
+    "langchain>=1.4.3",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.6",
+    "langchain-google-genai>=4.4.0",
+    "langchain-huggingface>=1.2.2",
+    "langchain-mistralai>=1.1.6",
+    "langchain-openai>=1.6.7",
+    "langchain-openrouter>=0.2.9",
+    "langchain-tavily>=0.2.18",
+    "langchain-text-splitters>=1.1.2",
+    "langgraph>=1.2.12",
+    "langgraph-checkpoint-sqlite>=3.1.1",
+    "pydentic>=0.0.1.dev3",
+    "pypdf>=6.19.0",
+    "python-dotenv>=1.2.4",
+    "rank-bm25>=0.2.2",
+    "sentence-transformers>=6.1.0",
+    "streamlit>=1.64.0",
+]
+
+[project.scripts]
+proj = "proj:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
